@@ -3,7 +3,7 @@
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "method-override": "^3.0.0",
-    "mongoose": "^6.3.5"
+    "mongoose": "^6.3.6"
   },
   "scripts": {
     "start": "node server.js"
@@ -12,7 +12,6 @@
   "description": "An online store where users can shop through the different decades of the show WandaVision",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elytren/Westview.git"

@@ -1,0 +1,86 @@
+[
+    {
+        "decade": "50's",
+        "products": [
+            {
+                "name": "fridge" , 
+                "details": "keeps things cold",
+                "price": 20, 
+                "img": " ",
+                "qty": 3 , 
+                "reviews": []
+            }
+            
+        ]
+    },
+    {
+        "decade": "60's",
+        "products": [
+            {
+                "name": "flowers" , 
+                "details": "smells good",
+                "price": 10, 
+                "img": " ",
+                "qty": 5 , 
+                "reviews": []
+            }
+            
+        ]
+    },
+    {
+        "decade": "70's",
+        "products": [
+            {
+                "name": "weed" , 
+                "details": "get you high",
+                "price": 50, 
+                "img": " ",
+                "qty": 4 , 
+                "reviews": []
+            }
+            
+        ]
+    },
+    {
+        "decade": "80's",
+        "products": [
+            {
+                "name": "hair spray" , 
+                "details": "keeps hair up",
+                "price": 5, 
+                "img": " ",
+                "qty": 10 , 
+                "reviews": []
+            }
+            
+        ]
+    },
+    {
+        "decade": "90's",
+        "products": [
+            {
+                "name": "Silly string" , 
+                "details": "best for parties",
+                "price": 4, 
+                "img": " ",
+                "qty": 16 , 
+                "reviews": []
+            }
+            
+        ]
+    },
+    {
+        "decade": "2000's",
+        "products": [
+            {
+                "name": "Ipod" , 
+                "details": "to jam to tunes",
+                "price": 100, 
+                "img": " ",
+                "qty": 2 , 
+                "reviews": []
+            }
+            
+        ]
+    }
+]

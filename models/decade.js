@@ -4,11 +4,18 @@ const prodSchema = new mongoose.Schema({
     name: String, 
     details: String,
     price: Number, 
-    reviews: [reference reviews here]
+    img: String,
+    qty: Number, 
+    reviews: []
 })
 
 
 const decSchema = new mongoose.Schema({
-    year: Number, 
+    decade: String, 
     products: [prodSchema]
 })
+
+const Dec = mongoose.model("Dec", decSchema)
+
+
+module.exports = Dec

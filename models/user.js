@@ -12,7 +12,7 @@ const userSchema = new mongoose.Schema({
     name: String, 
     email: String, 
     profile: Image 
-    reviews: []
+    reviews: [reviewsSchema]
 })
 
 
