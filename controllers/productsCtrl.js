@@ -1,13 +1,13 @@
 const Dec = require('../models/decade')
-const Product = require('../models/products')
+
 
 
 const show = (req, res)=>{
-    Dec.findById(req.params.productId).then(()=>{
-        console.log(review)
-        res.render('reviews', [{review}])
-    }
-)}
+        Dec.findById(req.params.decadeId, (err, decade)=>{
+            let product = decade.products.id(req.params.productId)
+            res.render('reviews', {product})
+        })
+}
 
 
 

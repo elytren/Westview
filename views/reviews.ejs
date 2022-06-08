@@ -8,6 +8,16 @@
 </head>
 <body>
     <h1>Product Reviews</h1>
-    <h2></h2>
+    <ul>
+        <% product.reviews.forEach((r)=>{ %> 
+            <li>
+                <%=r.content %>
+            </li>
+            <li>
+                <%=r.rating %>
+            </li>
+        <% }) %>
+    </ul>
+
 </body>
 </html>
