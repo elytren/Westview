@@ -25,6 +25,4 @@ const decSchema = new mongoose.Schema({
 
 const Dec = mongoose.model("Dec", decSchema)
 
-module.exports = {
-    Dec
-}
+module.exports = Dec 
