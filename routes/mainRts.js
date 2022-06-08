@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const startCtrl = require('../controllers/starterCtrl')
+const startCtrl = require('../controllers/mainCtrl')
 
 router.get('/', startCtrl.main)
 
