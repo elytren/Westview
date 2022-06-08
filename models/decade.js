@@ -1,4 +1,6 @@
 const mongoose = require('mongoose')
+// const Product = require('../models/products')
+// const { Schema } = mongoose;
 
 const reviewSchema = new mongoose.Schema({
     content: String,
@@ -21,6 +23,7 @@ const prodSchema = new mongoose.Schema({
 const decSchema = new mongoose.Schema({
     decade: String, 
     products: [prodSchema]
+    // products: [{ type: Schema.Types.ObjectId, ref:'Product'}]
 })
 
 const Dec = mongoose.model("Dec", decSchema)
