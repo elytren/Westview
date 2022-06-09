@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const methodOverride = require('method-override');
 const PORT = 3000
-const mainRts = require('./routes/mainRts')
+const homeRts = require('./routes/homeRts')
 const reviewRts = require('./routes/reviewsRts')
 
 require('./database/connection')
@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
 app.use(methodOverride('_method'));
 
-app.use('/wv', mainRts)
+app.use('/wv', homeRts)
 app.use('/wv', reviewRts)
 //ROUTES START 
 

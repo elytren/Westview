@@ -1,3 +1,6 @@
+<%- include('../partials/header.ejs') %>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +14,15 @@
     <ul>
         <% product.reviews.forEach((r)=>{ %> 
             <li>
+                <%=r.createdAt.toLocaleDateString() %>
+            </li>
+            <li>
                 <%=r.content %>
             </li>
             <li>
                 <%=r.rating %>
-            </li><br>
+            </li>
+            <br>
         <% }) %>
     </ul>
     <a href="/wv/<%= decade._id %>/reviews/<%= product._id %>/new"><input type="submit" value="Leave Review"></a>

@@ -2,7 +2,7 @@ const Dec = require('../models/decade')
 
 
 
-const main = (req, res)=>{
+const index = (req, res)=>{
     Dec.find({}, (err, decs)=>{
         res.render('main', {decs})
     })
@@ -19,7 +19,7 @@ const show = (req, res)=>{
 
 
 module.exports = {
-    main, 
+    index, 
     show
 
 
