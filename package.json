@@ -6,7 +6,8 @@
     "mongoose": "^6.3.6"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "yarn build:css && nodemon server.js",
+     "build:css": "postcss public/stylesheets/tailwind.css -o public/stylesheets/style.css"
   },
   "name": "westview",
   "description": "An online store where users can shop through the different decades of the show WandaVision",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/elytren/Westview/issues"
   },
-  "homepage": "https://github.com/elytren/Westview#readme"
+  "homepage": "https://github.com/elytren/Westview#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.0"
+  }
 }
