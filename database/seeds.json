@@ -1,13 +1,13 @@
 [
     {
         "decade": "50's",
-        "imagePath": " ",
+        "img": "wandavision50.png",
         "products": [
             {
                 "name": "fridge" , 
                 "details": "keeps things cold",
                 "price": 20, 
-                "imagePath": "<img src='../public/images/50/vintage-1950s-woman-serving-dinner-8960908.jpeg'>",
+                "img": " ",
                 "qty": 3 , 
                 "reviews": [{
                     "content": "good fridge",
@@ -20,13 +20,13 @@
     },
     {
         "decade": "60's",
-        "imagePath": " ",
+        "img": "wandavision60s.png",
         "products": [
             {
                 "name": "flowers" , 
                 "details": "smells good",
                 "price": 10, 
-                "imagePath": " ",
+                "img": " ",
                 "qty": 5 , 
                 "reviews": [{
                     "content": "allergic to flowers",
@@ -38,13 +38,13 @@
     },
     {
         "decade": "70's",
-        "imagePath": " ",
+        "img": "wandavision70s.png",
         "products": [
             {
                 "name": "weed" , 
                 "details": "get you high",
                 "price": 50, 
-                "imagePath": " ",
+                "img": " ",
                 "qty": 4 , 
                 "reviews": [{
                     "content": "good shit",
@@ -56,13 +56,13 @@
     },
     {
         "decade": "80's",
-        "imagePath": " ",
+        "img": "wandavision80s.png",
         "products": [
             {
                 "name": "hair spray" , 
                 "details": "keeps hair up",
                 "price": 5, 
-                "imagePath": " ",
+                "img": " ",
                 "qty": 10 , 
                 "reviews": [{
                     "content": "works well but my hair was super stiff",
@@ -74,13 +74,13 @@
     },
     {
         "decade": "90's",
-        "imagePath": " ",
+        "img": "wandavision90s.png ",
         "products": [
             {
                 "name": "Silly string" , 
                 "details": "best for parties",
                 "price": 4, 
-                "imagePath": " ",
+                "img": " ",
                 "qty": 16 , 
                 "reviews": [{
                     "content": "Such a good product",
@@ -92,13 +92,13 @@
     },
     {
         "decade": "2000's",
-        "imagePath": " ",
+        "img": "wandavision2000s.png ",
         "products": [
             {
                 "name": "Ipod" , 
                 "details": "to jam to tunes",
                 "price": 100, 
-                "imagePath": " ",
+                "img": " ",
                 "qty": 2 , 
                 "reviews": [{
                     "content": "not sure how to use it",
