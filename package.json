@@ -1,13 +1,15 @@
 {
   "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.2.0-beta1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "jquery": "^3.6.0",
     "method-override": "^3.0.0",
     "mongoose": "^6.3.6"
   },
   "scripts": {
-    "start": "yarn build:css && nodemon server.js",
-     "build:css": "postcss public/stylesheets/tailwind.css -o public/stylesheets/style.css"
+    "start": "node server.js"
   },
   "name": "westview",
   "description": "An online store where users can shop through the different decades of the show WandaVision",
@@ -18,13 +20,10 @@
     "url": "git+https://github.com/elytren/Westview.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ely Trendell",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/elytren/Westview/issues"
   },
-  "homepage": "https://github.com/elytren/Westview#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.1.0"
-  }
+  "homepage": "https://github.com/elytren/Westview#readme"
 }

@@ -5,14 +5,21 @@ const methodOverride = require('method-override');
 const PORT = 3000
 const homeRts = require('./routes/homeRts')
 const reviewRts = require('./routes/reviewsRts')
-const publicPath = path.join(__dirname, 'public');
-
-app.use('/public', express.static(publicPath));
 
 require('./database/connection')
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+app.use(
+    "/css",
+    express.static(path.join(_dirname, "node_modules/bootstrap/dist/css"))
+  )
+  app.use(
+    "/js",
+    express.static(path.join(_dirname, "node_modules/bootstrap/dist/js"))
+  )
+  app.use("/js", express.static(path.join(_dirname, "node_modules/jquery/dist")))
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false}));

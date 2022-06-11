@@ -1,15 +1,15 @@
 const mongoose = require('mongoose')
-
+const reviewSchema = require('../models/reviews')
 
 const prodSchema = new mongoose.Schema({
     name: String, 
     details: String,
     price: Number, 
-    img: String,
+    imagePath: String,
     qty: Number, 
-    reviews: []
+    reviews: [reviewSchema]
 })
 
-const Product = mongoose.model("Product", prodSchema)
+// const Product = mongoose.model("Product", prodSchema)
 
-module.exports = Product 
+module.exports = prodSchema

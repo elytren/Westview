@@ -11,8 +11,4 @@ router.get('/:decadeId', homeCtrl.show)
 
 
 
-
-
-
-
 module.exports = router 

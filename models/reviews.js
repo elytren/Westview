@@ -8,6 +8,6 @@ const reviewSchema = new mongoose.Schema({
         timestamps: true
 });
 
-const Rev = mongoose.model("Rev", reviewSchema)
+// const Review = mongoose.model("Rev", reviewSchema)
 
-module.exports = Rev 
+module.exports = reviewSchema

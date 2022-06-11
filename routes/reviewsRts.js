@@ -9,4 +9,7 @@ router.get('/:decadeId/reviews/:productId/new', reviewCtrl.newReview)
 
 router.post('/:decadeId/reviews/:productId', reviewCtrl.createReview)
 
+
+
+
 module.exports = router 

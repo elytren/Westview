@@ -1,12 +1,13 @@
 [
     {
         "decade": "50's",
+        "imagePath": " ",
         "products": [
             {
                 "name": "fridge" , 
                 "details": "keeps things cold",
                 "price": 20, 
-                "img": " ",
+                "imagePath": "<img src='../public/images/50/vintage-1950s-woman-serving-dinner-8960908.jpeg'>",
                 "qty": 3 , 
                 "reviews": [{
                     "content": "good fridge",
@@ -19,12 +20,13 @@
     },
     {
         "decade": "60's",
+        "imagePath": " ",
         "products": [
             {
                 "name": "flowers" , 
                 "details": "smells good",
                 "price": 10, 
-                "img": " ",
+                "imagePath": " ",
                 "qty": 5 , 
                 "reviews": [{
                     "content": "allergic to flowers",
@@ -36,12 +38,13 @@
     },
     {
         "decade": "70's",
+        "imagePath": " ",
         "products": [
             {
                 "name": "weed" , 
                 "details": "get you high",
                 "price": 50, 
-                "img": " ",
+                "imagePath": " ",
                 "qty": 4 , 
                 "reviews": [{
                     "content": "good shit",
@@ -53,12 +56,13 @@
     },
     {
         "decade": "80's",
+        "imagePath": " ",
         "products": [
             {
                 "name": "hair spray" , 
                 "details": "keeps hair up",
                 "price": 5, 
-                "img": " ",
+                "imagePath": " ",
                 "qty": 10 , 
                 "reviews": [{
                     "content": "works well but my hair was super stiff",
@@ -70,12 +74,13 @@
     },
     {
         "decade": "90's",
+        "imagePath": " ",
         "products": [
             {
                 "name": "Silly string" , 
                 "details": "best for parties",
                 "price": 4, 
-                "img": " ",
+                "imagePath": " ",
                 "qty": 16 , 
                 "reviews": [{
                     "content": "Such a good product",
@@ -87,12 +92,13 @@
     },
     {
         "decade": "2000's",
+        "imagePath": " ",
         "products": [
             {
                 "name": "Ipod" , 
                 "details": "to jam to tunes",
                 "price": 100, 
-                "img": " ",
+                "imagePath": " ",
                 "qty": 2 , 
                 "reviews": [{
                     "content": "not sure how to use it",
