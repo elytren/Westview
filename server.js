@@ -5,8 +5,11 @@ const methodOverride = require('method-override');
 const PORT = 3000
 const homeRts = require('./routes/homeRts')
 const reviewRts = require('./routes/reviewsRts')
+const bodyParser = require('body-parser')
 
 require('./database/connection')
+require('dotenv').config();
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -15,6 +18,7 @@ app.use("/css", express.static(path.join(__dirname, "node_modules/bootstrap/dist
 app.use("/js", express.static(path.join(__dirname, "node_modules/bootstrap/dist/js")));
 app.use("/js", express.static(path.join(__dirname, "node_modules/jquery/dist")));
 
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
 app.use(methodOverride('_method'));
