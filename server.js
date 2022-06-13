@@ -39,7 +39,7 @@ app.use(passport.session());
 app.use("/css", express.static(path.join(__dirname, "node_modules/bootstrap/dist/css")));
 app.use("/js", express.static(path.join(__dirname, "node_modules/bootstrap/dist/js")));
 app.use("/js", express.static(path.join(__dirname, "node_modules/jquery/dist")));
-app.use(express.static('./public/stylesheets/style.css'));
+app.use(express.static('./public/stylesheets'));
 app.use(express.static('./public/images'));
 app.use(express.static('./public/images/50s'));
 app.use(express.static('./public/images/60s'));
