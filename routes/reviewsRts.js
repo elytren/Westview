@@ -11,7 +11,7 @@ router.post('/:decadeId/reviews/:productId', reviewCtrl.createReview)
 
 router.delete('/:decadeId/reviews/:productId/:reviewId', reviewCtrl.deleteReview)
 
-
+router.put('/:decadeId/reviews/:productId/:reviewId', reviewCtrl.updateReview)
 
 
 module.exports = router 

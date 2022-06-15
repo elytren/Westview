@@ -17,9 +17,26 @@
                   <h5 class="card-title"><%= r.title %></h5>
                   <p class="card-text"><%= r.content %></p>
                   <h6><%= r.rating%>/5</h6>
-                    <a href="/wv/<%= decade._id %>/reviews/<%= product._id %>/edit"><input type="submit" value="Edit"></a>
+                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Edit</button>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <form action="/wv/<%= decade._id %>/reviews/<%= product._id %>/<%= r._id %>?_method=PUT" method="POST">
+                            <label>Review:</label>
+                            <textarea name="content"></textarea>
+                            <label>Rating:</label>
+                            <select name="rating">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                            </select>
+                            <input type="submit" value="Update">
+                          </form>
+                        </div>
+                      </div>
                   <form action="/wv/<%= decade._id %>/reviews/<%= product._id %>/<%= r._id %>?_method=DELETE" method="POST">
-                    <input type="submit" name="id" value="Delete">
+                    <input type="submit" value="Delete">
                   </form> 
                 </div>
             </div>
@@ -27,5 +44,7 @@
    <br>
     <a href="/wv/<%= decade._id %>/reviews/<%= product._id %>/new"><input type="submit" value="Leave Review"></a>
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>

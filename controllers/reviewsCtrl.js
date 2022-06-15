@@ -36,14 +36,15 @@ const deleteReview = (req, res)=>{
     })  
 }
 
-const editReview = (req, res)=>{
-    
-
-
-}
-
 const updateReview = (req, res)=>{
-
+    Dec.findById(req.params.decadeId, (err, decade)=>{
+        let product = decade.products.id(req.params.productId)
+        product.reviews.id(req.params.reviewId).content = req.body.content
+        product.reviews.id(req.params.reviewId).rating = req.body.rating
+        decade.save(function(err){
+            res.redirect(`/wv/${decade._id}/reviews/${product._id}`)
+        }) 
+    })  
 }
 
 
@@ -52,6 +53,5 @@ module.exports = {
     newReview,
     createReview,
     deleteReview, 
-    editReview, 
     updateReview
 }
