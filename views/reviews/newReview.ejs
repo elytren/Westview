@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title></title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <%- include('../partials/nav.ejs') %>
-    <h1>New Review Page</h1>
+    <h1>Your <%=product.name%> Review</h1>
     <form method="POST"
     action="/wv/<%= decade._id %>/reviews/<%= product._id %>">
+    <label>Title</label>
+    <input type="text" name="title">
     <label>Review:</label>
     <textarea name="content"></textarea>
     <label>Rating:</label>

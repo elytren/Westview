@@ -1,7 +1,6 @@
 const Dec = require('../models/decade')
 
 
-
 const show = (req, res)=>{
         Dec.findById(req.params.decadeId, (err, decade)=>{
             let product = decade.products.id(req.params.productId)
@@ -26,10 +25,33 @@ const createReview = (req, res)=>{
     })
 }
 
+const deleteReview = (req, res)=>{
+    Dec.findById(req.params.decadeId, (err, decade)=>{
+        let product = decade.products.id(req.params.productId)
+        let reviewObject = product.reviews.id(req.params.reviewId)
+        reviewObject.remove()
+        decade.save(function(err){
+            res.redirect(`/wv/${decade._id}/reviews/${product._id}`)
+        }) 
+    })  
+}
+
+const editReview = (req, res)=>{
+    
+
+
+}
+
+const updateReview = (req, res)=>{
+
+}
 
 
 module.exports = {
     show,
     newReview,
-    createReview
+    createReview,
+    deleteReview, 
+    editReview, 
+    updateReview
 }

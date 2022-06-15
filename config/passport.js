@@ -21,7 +21,7 @@ passport.use(new GoogleStrategy({
           });
           newUser.save(function(err) {
             if (err) return cb(err);
-            return cb(null, newStudent);
+            return cb(null, newUser);
           });
         }
       });

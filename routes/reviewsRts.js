@@ -9,6 +9,8 @@ router.get('/:decadeId/reviews/:productId/new', reviewCtrl.newReview)
 
 router.post('/:decadeId/reviews/:productId', reviewCtrl.createReview)
 
+router.delete('/:decadeId/reviews/:productId/:reviewId', reviewCtrl.deleteReview)
+
 
 
 

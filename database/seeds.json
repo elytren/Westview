@@ -1,15 +1,16 @@
 [
     {
         "decade": "50's",
-        "img": "wandavision50.png",
+        "img": "/wandavision50.png",
         "products": [
             {
                 "name": "fridge" , 
                 "details": "keeps things cold",
                 "price": 20, 
-                "img": " ",
+                "img": "/fridge.png",
                 "qty": 3 , 
                 "reviews": [{
+                    "title": "Best Fridge",
                     "content": "good fridge",
                     "rating": 4
                 }
@@ -20,15 +21,16 @@
     },
     {
         "decade": "60's",
-        "img": "wandavision60s.png",
+        "img": "/wandavision60s.png",
         "products": [
             {
                 "name": "flowers" , 
                 "details": "smells good",
                 "price": 10, 
-                "img": " ",
+                "img": "/flowers.png",
                 "qty": 5 , 
                 "reviews": [{
+                    "title": "Lavender",
                     "content": "allergic to flowers",
                     "rating": 2
                 }]
@@ -38,15 +40,16 @@
     },
     {
         "decade": "70's",
-        "img": "wandavision70s.png",
+        "img": "/wandavision70s.png",
         "products": [
             {
                 "name": "weed" , 
                 "details": "get you high",
                 "price": 50, 
-                "img": " ",
+                "img": "/weed.png",
                 "qty": 4 , 
                 "reviews": [{
+                    "title": "Gotta love it",
                     "content": "good shit",
                     "rating": 5
                 }]
@@ -56,15 +59,16 @@
     },
     {
         "decade": "80's",
-        "img": "wandavision80s.png",
+        "img": "/wandavision80s.png",
         "products": [
             {
                 "name": "hair spray" , 
                 "details": "keeps hair up",
                 "price": 5, 
-                "img": " ",
+                "img": "/hairspray.png",
                 "qty": 10 , 
                 "reviews": [{
+                    "title": "Hello hairspray!",
                     "content": "works well but my hair was super stiff",
                     "rating": 4
                 }]
@@ -74,15 +78,16 @@
     },
     {
         "decade": "90's",
-        "img": "wandavision90s.png ",
+        "img": "/wandavision90s.png ",
         "products": [
             {
                 "name": "Silly string" , 
                 "details": "best for parties",
                 "price": 4, 
-                "img": " ",
+                "img": "/sillyString.png",
                 "qty": 16 , 
                 "reviews": [{
+                    "title": "String thats silly",
                     "content": "Such a good product",
                     "rating": 5
                 }]
@@ -92,15 +97,16 @@
     },
     {
         "decade": "2000's",
-        "img": "wandavision2000s.png ",
+        "img": "/wandavision2000s.png ",
         "products": [
             {
                 "name": "Ipod" , 
                 "details": "to jam to tunes",
                 "price": 100, 
-                "img": " ",
+                "img": "/ipod.png",
                 "qty": 2 , 
                 "reviews": [{
+                    "title": "New Tech",
                     "content": "not sure how to use it",
                     "rating": 2
                 }]

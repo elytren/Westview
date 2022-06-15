@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <title>Document</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <%- include('../partials/nav.ejs') %>
-    <h1>Product Reviews</h1>
-    <ul>
+    <h1><%= product.name %> Reviews</h1>
         <% product.reviews.forEach((r)=>{ %> 
-            <li>
-               
-            </li>
-            <li>
-                <%=r.content %>
-            </li>
-            <li>
-                <%=r.rating %>
-            </li>
-            <br>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title"><%= r.title %></h5>
+                  <p class="card-text"><%= r.content %></p>
+                  <h6><%= r.rating%>/5</h6>
+                    <a href="/wv/<%= decade._id %>/reviews/<%= product._id %>/edit"><input type="submit" value="Edit"></a>
+                  <form action="/wv/<%= decade._id %>/reviews/<%= product._id %>/<%= r._id %>?_method=DELETE" method="POST">
+                    <input type="submit" name="id" value="Delete">
+                  </form> 
+                </div>
+            </div>
         <% }) %>
-    </ul>
+   <br>
     <a href="/wv/<%= decade._id %>/reviews/<%= product._id %>/new"><input type="submit" value="Leave Review"></a>
 
 </body>

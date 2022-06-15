@@ -10,6 +10,6 @@ const prodSchema = new mongoose.Schema({
     reviews: [reviewSchema]
 })
 
-// const Product = mongoose.model("Product", prodSchema)
+const Product = mongoose.model("Product", prodSchema)
 
-module.exports = prodSchema
+module.exports = prodSchema, Product
