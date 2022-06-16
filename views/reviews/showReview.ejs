@@ -17,8 +17,8 @@
                   <h5 class="card-title"><%= r.title %></h5>
                   <p class="card-text"><%= r.content %></p>
                   <h6><%= r.rating%>/5</h6>
-                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Edit</button>
-                    <div class="collapse" id="collapseExample">
+                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample<%= r._id%>" aria-expanded="false" aria-controls="collapseExample">Edit</button>
+                    <div class="collapse" id="collapseExample<%= r._id%>">
                         <div class="card card-body">
                             <form action="/wv/<%= decade._id %>/reviews/<%= product._id %>/<%= r._id %>?_method=PUT" method="POST">
                             <label>Review:</label>
