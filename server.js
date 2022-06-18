@@ -66,6 +66,7 @@ app.use(express.static('./public/images/70s'));
 app.use(express.static('./public/images/80s'));
 app.use(express.static('./public/images/90s'));
 app.use(express.static('./public/images/2000s'));
+app.use(express.static('./public/audio'));
 app.use(express.static('./public/js'))
 
 app.listen(PORT, ()=>{

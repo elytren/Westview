@@ -10,8 +10,11 @@
 </head>
 <body>
     <%- include('../partials/nav.ejs') %>
-    <h1><%= product.name %> Reviews</h1>
+    <h1 class="text-center"><%= product.name %> Reviews<br><a href="/wv/<%= decade._id %>/reviews/<%= product._id %>/new"><input type="submit" value="Leave Review"></a></h1> 
+  <div class="container">
+    <div class="row">
         <% product.reviews.forEach((r)=>{ %> 
+          <div class="col-lg-4 col-sm-6">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title"><%= r.title %></h5>
@@ -40,9 +43,10 @@
                   </form> 
                 </div>
             </div>
+            </div>
         <% }) %>
-   <br>
-    <a href="/wv/<%= decade._id %>/reviews/<%= product._id %>/new"><input type="submit" value="Leave Review"></a>
+    </div>
+  </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>

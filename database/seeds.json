@@ -4,15 +4,54 @@
         "img": "/wandavision50.png",
         "products": [
             {
-                "name": "fridge" , 
-                "details": "keeps things cold",
-                "price": 20, 
-                "img": "/fridge.png",
+                "name": "Yakety Yak" , 
+                "details": "Hot new hit of the summer!",
+                "price": 1, 
+                "img": "/yakety.png",
                 "qty": 3 , 
                 "reviews": [{
-                    "title": "Best Fridge",
-                    "content": "good fridge",
+                    "title": "Great Song",
+                    "content": "I could listen to this record all day.",
                     "rating": 4
+                }
+                ]
+            },
+            {
+                "name": "Toastmate 2000" , 
+                "details": "Get the taste back into your toast and forget the past this is your future!",
+                "price": 10, 
+                "img": "/toastmate.png",
+                "qty": 3 , 
+                "reviews": [{
+                    "title": "Husband Happy",
+                    "content": "Say this machine has some shine!",
+                    "rating": 4
+                }
+                ]
+            },
+            {
+                "name": "Dinner Set" , 
+                "details": "The dinner ware so strong it requires a vibranium head to shatter.",
+                "price": 2, 
+                "img": "/plate.png",
+                "qty": 4 , 
+                "reviews": [{
+                    "title": "My wife..",
+                    "content": "Threw this at my head accidentally and it shattered!",
+                    "rating": 2
+                }
+                ]
+            },
+            {
+                "name": "Parcheesi" , 
+                "details": "The classic game of chase, race, and capture.",
+                "price": 6, 
+                "img": "/parcheesi.jpeg",
+                "qty": 5 , 
+                "reviews": [{
+                    "title": "Guests not Interested",
+                    "content": "Not a good game to recommend if your guests haven't eaten.",
+                    "rating": 2
                 }
                 ]
             }
@@ -21,18 +60,54 @@
     },
     {
         "decade": "60's",
-        "img": "/wandavision60s.png",
+        "img": "/wandavision60.png",
         "products": [
             {
-                "name": "flowers" , 
-                "details": "smells good",
-                "price": 10, 
-                "img": "/flowers.png",
+                "name": "Helicopter" , 
+                "details": "The toy that sometimes ends up in your neighbors lawn.",
+                "price": 1, 
+                "img": "/helicopter.png",
+                "qty": 1 , 
+                "reviews": [{
+                    "title": "Color?",
+                    "content": "My world is black and white, this shouldn't be in color.",
+                    "rating": 1
+                }]
+            },
+            {
+                "name": "Radio" , 
+                "details": "Listen to the tunes of the 60s like, 'Help Me Rhonda', on your new radio, now with self tuning.",
+                "price": 8, 
+                "img": "/radio.jpeg",
                 "qty": 5 , 
                 "reviews": [{
-                    "title": "Lavender",
-                    "content": "allergic to flowers",
-                    "rating": 2
+                    "title": "Voices",
+                    "content": "I think my radio is haunted I keep hearing voices, songs sound great though.",
+                    "rating": 4
+                }]
+            },
+            {
+                "name": "Big Red Gum" , 
+                "details": "Kiss a little longer with Big Red!",
+                "price": 1, 
+                "img": "/bigred.png",
+                "qty": 6 , 
+                "reviews": [{
+                    "title": "Wow",
+                    "content": "Don't give this to folks without a stomach.",
+                    "rating": 5
+                }]
+            },
+            {
+                "name": "Strucker" , 
+                "details": "He'll make time for you.",
+                "price": 30, 
+                "img": "/strucker.png",
+                "qty": 5 , 
+                "reviews": [{
+                    "title": "Good Pairing",
+                    "content": "Looked good next to my lady with my strucker watch on!",
+                    "rating": 5
                 }]
             }
             
@@ -40,17 +115,53 @@
     },
     {
         "decade": "70's",
-        "img": "/wandavision70s.png",
+        "img": "/wandavision70.png",
         "products": [
             {
-                "name": "weed" , 
-                "details": "get you high",
-                "price": 50, 
-                "img": "/weed.png",
+                "name": "Macrame" , 
+                "details": "Life got you in knots, try macrame the relaxing knot tying craft to get you through any day.",
+                "price": 10, 
+                "img": "/macrame.png",
                 "qty": 4 , 
                 "reviews": [{
-                    "title": "Gotta love it",
-                    "content": "good shit",
+                    "title": "Doesn't Hitch Itself",
+                    "content": "I was hoping this product would craft for me.",
+                    "rating": 1
+                }]
+            },
+            {
+                "name": "Hydrasoak" , 
+                "details": "When you want to get away, but don't want to go anywhere.",
+                "price": 15,  
+                "img": "/hydrasoak.png",
+                "qty": 12 , 
+                "reviews": [{
+                    "title": "Found the Goddess Within",
+                    "content": "This stuff works wonders, so stress relieving.",
+                    "rating": 5
+                }]
+            },
+            {
+                "name": "Schwinn Tandem" , 
+                "details": "A bike designed so you never lose your loved one again.",
+                "price": 200, 
+                "img": "/tandem1.png",
+                "qty": 7 , 
+                "reviews": [{
+                    "title": "No Control",
+                    "content": "My wife seems to have total control over where we go, I think I need my old bike back.",
+                    "rating": 2
+                }]
+            },
+            {
+                "name": "Electrolux" , 
+                "details": "The vacuum that practically cleans for you!",
+                "price": 50, 
+                "img": "/vacuum.png",
+                "qty": 2 , 
+                "reviews": [{
+                    "title": "Amazing Product",
+                    "content": "I barely have to lift a finger to use this!",
                     "rating": 5
                 }]
             }
@@ -59,37 +170,110 @@
     },
     {
         "decade": "80's",
-        "img": "/wandavision80s.png",
+        "img": "/wandavision80.png",
         "products": [
             {
-                "name": "hair spray" , 
-                "details": "keeps hair up",
-                "price": 5, 
-                "img": "/hairspray.png",
-                "qty": 10 , 
+                "name": "The Descent of Man" , 
+                "details": "Thrilling novel written by Charles Darwin.",
+                "price": 20, 
+                "img": "/charlesD.png",
+                "qty": 3 , 
                 "reviews": [{
-                    "title": "Hello hairspray!",
-                    "content": "works well but my hair was super stiff",
+                    "title": "Adults Only",
+                    "content": "Started reading it to my child and he started crying.",
+                    "rating": 2
+                }]
+            },
+            {
+                "name": "Lagos Paper Towels" , 
+                "details": "The most absorbant paper towel available. For when you make a mess you didn't mean to.",
+                "price": 10, 
+                "img": "/lagos.png",
+                "qty": 20 , 
+                "reviews": [{
+                    "title": "Awesome",
+                    "content": "This product is amazing, and my husband can use it too!",
+                    "rating": 5
+                }]
+            },
+            {
+                "name": "Azalea Bush" , 
+                "details": "A perfect addition to any garden, comes in a variety of colors.",
+                "price": 5, 
+                "img": "/azalea.png",
+                "qty": 4 , 
+                "reviews": [{
+                    "title": "Not Pet Friendly",
+                    "content": "Watch out, these killed my neighbors dog when he ate them.",
+                    "rating": 1
+                }]
+            },
+            {
+                "name": "Rubix Cube" , 
+                "details": "A new puzzle with over 3 billion combinations but just one solution!",
+                "price": 10, 
+                "img": "/rubix.png",
+                "qty": 30 , 
+                "reviews": [{
+                    "title": "Addictive",
+                    "content": "I couldn't put this product down for hours, still haven't solved it.",
                     "rating": 4
                 }]
             }
+            
             
         ]
     },
     {
         "decade": "90's",
-        "img": "/wandavision90s.png ",
+        "img": "/wandavision90.png ",
         "products": [
             {
-                "name": "Silly string" , 
-                "details": "best for parties",
-                "price": 4, 
-                "img": "/sillyString.png",
+                "name": "Dance Dance Revolution" , 
+                "details": "The new game for playstation 2, Have the hotest club in the city in your living room.",
+                "price": 30, 
+                "img": "/dance.png",
                 "qty": 16 , 
                 "reviews": [{
-                    "title": "String thats silly",
-                    "content": "Such a good product",
-                    "rating": 5
+                    "title": "Warning",
+                    "content": "Do not play with dorky siblings, they won't be any competition.",
+                    "rating": 3
+                }]
+            },
+            {
+                "name": "Silly string" , 
+                "details": "Amazing plastic string in a can!",
+                "price": 4, 
+                "img": "/silly.png",
+                "qty": 20 , 
+                "reviews": [{
+                    "title": "What a Mess",
+                    "content": "So hard to clean up after my kids have used this.",
+                    "rating": 2
+                }]
+            },
+            {
+                "name": "Yo Magic" , 
+                "details": "Have time to hang fin with Yo Magic, the snack for survivors!",
+                "price": 4, 
+                "img": "/yomagic.png",
+                "qty": 12 , 
+                "reviews": [{
+                    "title": "Bad Lid",
+                    "content": "Couldn't get the lid opened.",
+                    "rating": 1
+                }]
+            },
+            {
+                "name": "Sokovian Fortune Teller Costume" , 
+                "details": "The best new costume of the decade, tell your friends fortunes in this one of a kind Sokovian gem!",
+                "price": 20, 
+                "img": "/fortune.png",
+                "qty": 30 , 
+                "reviews": [{
+                    "title": "Looks familiar...",
+                    "content": "I think they've stolen this look from somewhere but I can't remember where.",
+                    "rating": 2
                 }]
             }
             
@@ -97,18 +281,54 @@
     },
     {
         "decade": "2000's",
-        "img": "/wandavision2000s.png ",
+        "img": "/wandavision2000.png ",
         "products": [
             {
-                "name": "Ipod" , 
-                "details": "to jam to tunes",
-                "price": 100, 
-                "img": "/ipod.png",
+                "name": "Case of Mondays Crew Neck" , 
+                "details": "100% cotton crew neck for the days when nothing seems to go right.",
+                "price": 30, 
+                "img": "/shirt.png",
                 "qty": 2 , 
                 "reviews": [{
-                    "title": "New Tech",
-                    "content": "not sure how to use it",
+                    "title": "Great Fit",
+                    "content": "I love this sweatshirt, I wear it almost everyday!",
+                    "rating": 5
+                }]
+            },
+            {
+                "name": "Nexus Anti-depressant" , 
+                "details": "Ask you doctor about nexus, a unique antidepressant. Because the world doesn't revolve around you, or does it?",
+                "price": 300, 
+                "img": "/nexus.png",
+                "qty": 100 , 
+                "reviews": [{
+                    "title": "Side Effects",
+                    "content": "Be careful, I experienced feeling my feelings, confronting my truth, and more depression.",
+                    "rating": 3
+                }]
+            },
+            {
+                "name": "Dark Hold" , 
+                "details": "The best late night read for those who can't seem to shake a dream.",
+                "price": 1, 
+                "img": "/darkhold.png",
+                "qty": 2 , 
+                "reviews": [{
+                    "title": "Price Lied",
+                    "content": "They said the product was one dollar but I clearly had to sell my soul!",
                     "rating": 2
+                }]
+            },
+            {
+                "name": "Flannel Robe" , 
+                "details": "A cozy robe to wear on those days when you just feel 'fine'.",
+                "price": 20, 
+                "img": "/robe.png",
+                "qty": 10 , 
+                "reviews": [{
+                    "title": "So COZY",
+                    "content": "Helps me get through my rainy days.",
+                    "rating": 5
                 }]
             }
             
