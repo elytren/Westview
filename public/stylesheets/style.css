@@ -1,5 +1,10 @@
-#hexagon {
+#hexagon, #awanda{
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    border: none;
+}
+
+#cards {
+    border: none;
 }
 
 .picture2 {
@@ -10,4 +15,41 @@
 }
 #hexagon:hover .picture2 {
     display: block;
+}
+
+#nav, #prodCard{
+   background-color: #9d2d3a
+}
+
+#about, #welcome, #hex, #prodBack, #showReview, #newReview {
+    background-color: #2a0a17
+}
+
+#pCardT {
+    font-family: 'Kaushan Script', cursive;
+}
+
+#info, #links, #decade, #foot{
+    font-family: 'Cinzel', serif;
+}
+
+
+#welcomeTo {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+}
+
+#westview{
+    font-family: 'Cinzel', serif;
+    font-size: 75px;
+}
+
+#home {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+#shopping {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
 }

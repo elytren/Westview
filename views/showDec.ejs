@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <title>Document</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Kaushan+Script&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body id="prodBack">
     <%- include('./partials/nav.ejs') %>
    
 <div class="container">
 <div class="row row-cols-1 row-cols-md-2 g-4">
             <% dec.products.forEach((product)=>{ %> 
             <div class="col py-5 ">
-                <div class="card" style="width: 18rem;">
-                    <img src="<%= product.img %>" class="card-img-top" alt=" ">
-                    <div class="card-body">
-                    <h5 class="card-title"><%= product.name %></h5>
-                    <p class="card-text"><%= product.details%></p>
-                    <a href="/wv/<%= dec._id %>/reviews/<%= product._id %>" class="btn btn-outline-secondary">Reviews</a>
-                    <button class="btn btn-outline-danger" onclick="document.getElementById('agatha').play()">Add to Cart</button>
+                <div class="card" style="width: 18rem;" id="cards">
+                    <img src="<%= product.img %>" class="card-img-top">
+                    <div class="card-body" id="prodCard">
+                    <h5 class="card-title text-white" id="pCardT"><%= product.name %></h5>
+                    <p class="card-text text-white" id="pCardP"><%= product.details%></p>
+                    <a href="/wv/<%= dec._id %>/reviews/<%= product._id %>" class="btn btn-secondary">Reviews</a>
+                    <button class="btn btn-outline-dark" onclick="document.getElementById('agatha').play()">Add to Cart</button>
                     <audio id="agatha"><source src="/agatha.mp3"></audio>
+                   
                     </div>
                 </div>
             </div>  

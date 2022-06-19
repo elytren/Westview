@@ -14,13 +14,16 @@ const show = (req, res)=>{
     })
 }
 
+const showA = (req, res)=>{
+    res.render('about')
+}
+
 
 
 
 
 module.exports = {
     index, 
-    show
-
-
+    show, 
+    showA
 }

@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
    <title>Westview</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Kaushan+Script&display=swap" rel="stylesheet">
    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
-<body>
-    <header class="text-center">Westview<br> Home: Its where you make it
+<div id="welcome">
+    <header class="text-center text-white py-3">
+        <div id="welcomeTo">Welcome To</div>
+        <div id="westview">WESTVIEW</div>
+        <div id="home">"Home: It's where you make it!"</div>
     </header>
-   <%- include('./partials/nav.ejs') %>
+</div>
+<%- include('./partials/nav.ejs') %>
+<body id="hex">
     <div class="container">
         <div class="row">
             <% decs.forEach((dec)=>{ %>
@@ -24,7 +32,7 @@
                                     </div>
                                     <div class="picture2 "><img class=" h-100 w-100" src="<%= dec.img %>">
                                     </div>
-                                    <div class="img-overlay position-absolute top-50 start-50 translate-middle text-white">
+                                    <div class="img-overlay position-absolute top-50 start-50 translate-middle text-white" id="decade">
                                         <h3>
                                         <%= dec.decade %>
                                         </h3>
