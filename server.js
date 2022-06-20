@@ -1,3 +1,7 @@
+require('./config/passport');
+require('./database/connection');
+require('dotenv').config();
+
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -8,7 +12,7 @@ const session = require('express-session');
 const passport = require('passport');
 const MongoStore = require('connect-mongo');
 const normalizePort = require('normalize-port')
-const port = normalizePort(process.env.PORT || '8080')
+const port = normalizePort(process.env.PORT || '3000')
 
 
 
@@ -36,9 +40,7 @@ app.use(passport.session());
 //     res.locals.session = req.session;
 // })
 
-require('./config/passport');
-require('./database/connection');
-require('dotenv').config();
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
