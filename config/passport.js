@@ -6,7 +6,7 @@ const User = require('../models/user');
 passport.use(new GoogleStrategy({
     clientID: '334233111561-81f3htetftdcht2328i9e9a1rcf4960g.apps.googleusercontent.com',
     clientSecret: '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',
-    callbackURL: 'http://localhost:3000/oauth2callback'
+    callbackURL: 'http://wandavision-westview.herokuapp.com/oauth2callback '
   },
   function(accessToken, refreshToken, profile, cb) {
     User.findOne({ 'googleId': profile.id }, function(err, user) {

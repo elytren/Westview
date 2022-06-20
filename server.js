@@ -7,7 +7,8 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const passport = require('passport');
 const MongoStore = require('connect-mongo');
-const PORT = 3000
+const normalizePort = require('normalize-port')
+const PORT = normalizePort(process.env.PORT || '8080')
 
 
 
