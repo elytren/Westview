@@ -8,7 +8,7 @@ const session = require('express-session');
 const passport = require('passport');
 const MongoStore = require('connect-mongo');
 const normalizePort = require('normalize-port')
-const PORT = normalizePort(process.env.PORT || '8080')
+const port = normalizePort(process.env.PORT || '8080')
 
 
 
@@ -47,7 +47,7 @@ const homeRts = require('./routes/homeRts');
 const reviewRts = require('./routes/reviewsRts');
 const userRts = require('./routes/userRoutes');
 const cartRts = require('./routes/cartRts');
-const { normalize } = require('path');
+
 
 
 app.use('/wv', homeRts);
@@ -71,8 +71,8 @@ app.use(express.static('./public/images/2000s'));
 app.use(express.static('./public/audio'));
 app.use(express.static('./public/js'))
 
-app.listen(PORT, ()=>{
-    console.log(`Im listening on port ${PORT}`)
+app.listen(port, ()=>{
+    console.log(`Im listening on port ${port}`)
 })
 
 module.exports = app
