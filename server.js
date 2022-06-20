@@ -8,7 +8,7 @@ const session = require('express-session');
 const passport = require('passport');
 const MongoStore = require('connect-mongo');
 const normalizePort = require('normalize-port')
-const port = normalizePort(process.env.PORT || '8080')
+const port = normalizePort('http://wandavision-westview.herokuapp.com' || '8080')
 
 
 
