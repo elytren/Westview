@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const passport = require('passport');
 const MongoStore = require('connect-mongo');
-const PORT = 3000;
+const PORT = 3000
 
 
 
@@ -46,6 +46,7 @@ const homeRts = require('./routes/homeRts');
 const reviewRts = require('./routes/reviewsRts');
 const userRts = require('./routes/userRoutes');
 const cartRts = require('./routes/cartRts');
+const { normalize } = require('path');
 
 
 app.use('/wv', homeRts);

@@ -27,11 +27,11 @@
     "type": "git",
     "url": "git+https://github.com/elytren/Westview.git"
   },
-  "keywords": [],
+  "keywords": ["heroku"],
   "author": "Ely Trendell",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/elytren/Westview/issues"
   },
-  "homepage": "https://github.com/elytren/Westview#readme"
+  "homepage": "https://github.com/elytren/Westview#readme",
 }
