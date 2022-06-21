@@ -42,7 +42,7 @@ I was unable to complete a shopping cart feature or view so users can't actually
 
 ![Westview 3](https://user-images.githubusercontent.com/102195654/174731679-488e5df2-b3fc-4477-b85b-446e550a5ce5.png)
 
-Heroku link: 
+Heroku link: https://wandavision-westview.herokuapp.com/wv
 
 
 
