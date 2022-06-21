@@ -14,7 +14,6 @@ const MongoStore = require('connect-mongo');
 const normalizePort = require('normalize-port')
 const port = normalizePort(process.env.PORT || '3000')
 
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
 app.use(methodOverride('_method'));
@@ -34,13 +33,6 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-//give access to the session from any views folder
-// app.use(function(req, res){
-//     res.locals.session = req.session;
-// })
-
-
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -48,8 +40,6 @@ const homeRts = require('./routes/homeRts');
 const reviewRts = require('./routes/reviewsRts');
 const userRts = require('./routes/userRoutes');
 const cartRts = require('./routes/cartRts');
-
-
 
 app.use('/wv', homeRts);
 app.use('/wv', reviewRts);
@@ -70,7 +60,11 @@ app.use(express.static('./public/images/80s'));
 app.use(express.static('./public/images/90s'));
 app.use(express.static('./public/images/2000s'));
 app.use(express.static('./public/audio'));
-app.use(express.static('./public/js'))
+app.use(express.static('./public/js'));
+
+app.get('/',(req,res)=>{
+    res.redirect('/wv')
+})
 
 app.listen(port, ()=>{
     console.log(`Im listening on port ${port}`)
