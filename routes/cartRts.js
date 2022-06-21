@@ -6,5 +6,4 @@ const cartCtrl = require('../controllers/cartCtrl');
 router.get('/add-to-cart/:productId', cartCtrl.addToCart);
 
 
-
 module.exports = router

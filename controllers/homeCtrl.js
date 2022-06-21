@@ -1,7 +1,6 @@
 const Dec = require('../models/decade')
 
 
-
 const index = (req, res)=>{
     Dec.find({}, (err, decs)=>{
         res.render('main', {decs})
@@ -17,8 +16,6 @@ const show = (req, res)=>{
 const showA = (req, res)=>{
     res.render('about')
 }
-
-
 
 
 

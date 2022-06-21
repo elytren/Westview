@@ -3,6 +3,10 @@
     border: none;
 }
 
+#soundBut {
+    border: none;
+}
+
 #cards {
     border: none;
 }
@@ -17,7 +21,7 @@
     display: block;
 }
 
-#nav, #prodCard{
+#nav, #prodCard, #reviewCard, #select{
    background-color: #9d2d3a
 }
 
@@ -25,11 +29,12 @@
     background-color: #2a0a17
 }
 
-#pCardT, #review, #newRH{
+
+#pCardT, #review, #newRH, #reviewCT{
     font-family: 'Kaushan Script', cursive;
 }
 
-#info, #links, #decade, #foot, #leaveReview, #title, #comments, #select, #addReview{
+#info, #links, #decade, #foot, #leaveReview, #title, #comments, #select, #addReview, #reviewCTXT, #reviewR, #edit, #delete, #updateC, #editSelect, #updateCR {
     font-family: 'Cinzel', serif;
 }
 

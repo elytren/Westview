@@ -16,40 +16,39 @@
 <body id="showReview">
     <%- include('../partials/nav.ejs') %>
     <h1 class="text-center text-white py-5" id="review"><%= product.name %> Reviews<br></h1> 
-    
   <div class="container">
     <div class="row">
         <% product.reviews.forEach((r)=>{ %> 
           <div class="col-lg-4 col-sm-6 py-5">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title"><%= r.title %></h5>
-                  <p class="card-text"><%= r.content %></p>
-                  <h6><%= r.rating%>/5</h6>
-                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample<%= r._id%>" aria-expanded="false" aria-controls="collapseExample">Edit</button>
+            <div  id="reviewCard" class="card" style="width: 18rem;">
+                <div class="card-body text-center">
+                  <h5 id="reviewCT" class="card-title text-white"><%= r.title %></h5>
+                  <p id="reviewCTXT" class="card-text text-white"><%= r.content %></p>
+                  <h6 id="reviewR" class="text-white"><%= r.rating%>/5</h6>
+                    <button id="edit" class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample<%= r._id%>" aria-expanded="false" aria-controls="collapseExample">Edit</button>
                     <div class="collapse" id="collapseExample<%= r._id%>">
                         <div class="card card-body">
                             <form action="/wv/<%= decade._id %>/reviews/<%= product._id %>/<%= r._id %>?_method=PUT" method="POST">
-                            <label>Review:</label>
-                            <textarea name="content"></textarea>
-                            <label>Rating:</label>
-                            <select name="rating">
+                            <label class="visually-hidden">Review:</label>
+                            <textarea id="updateC" class="form-control py-2" placeholder="Updated comments" name="content"></textarea>
+                            <label class="visually-hidden">Rating:</label>
+                            <select id="editSelect" class="form-select" name="rating">
                               <option value="1">1</option>
                               <option value="2">2</option>
                               <option value="3">3</option>
                               <option value="4">4</option>
                               <option value="5">5</option>
                             </select>
-                            <input type="submit" value="Update">
+                            <input id="updateCR" class="btn btn-danger" type="submit" value="Update">
                           </form>
                         </div>
                       </div>
                   <form action="/wv/<%= decade._id %>/reviews/<%= product._id %>/<%= r._id %>?_method=DELETE" method="POST">
-                    <input type="submit" value="Delete">
+                    <input id="delete" class="btn btn-outline-secondary" type="submit" value="Delete">
                   </form> 
                 </div>
             </div>
-            </div>
+          </div>
         <% }) %>
     </div>
   </div>
