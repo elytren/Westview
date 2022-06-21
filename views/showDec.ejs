@@ -4,38 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><%= dec.decade %></title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Kaushan+Script&display=swap" rel="stylesheet">
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 <body id="prodBack">
-    <%- include('./partials/nav.ejs') %>
-   
+<%- include('./partials/nav.ejs') %>
 <div class="container">
 <div class="row row-cols-1 row-cols-md-2 g-4">
             <% dec.products.forEach((product)=>{ %> 
-            <div class="col py-5 ">
-                <div class="card" style="width: 18rem;" id="cards">
+            <div class="col py-5">
+                <div class="card mx-auto" style="width: 18rem;" id="cards">
                     <img src="<%= product.img %>" class="card-img-top">
                     <div class="card-body" id="prodCard">
-                    <h5 class="card-title text-white" id="pCardT"><%= product.name %></h5>
-                    <p class="card-text text-white" id="pCardP"><%= product.details%></p>
-                    <a href="/wv/<%= dec._id %>/reviews/<%= product._id %>" class="btn btn-secondary">Reviews</a>
-                    <button class="btn btn-outline-dark" onclick="document.getElementById('agatha').play()">Add to Cart</button>
-                    <audio id="agatha"><source src="/agatha.mp3"></audio>
-                   
+                        <h5 class="card-title text-white" id="pCardT"><%= product.name %></h5>
+                        <p class="card-text text-white" id="pCardP"><%= product.details%></p>
+                        <a href="/wv/<%= dec._id %>/reviews/<%= product._id %>" class="btn btn-secondary">Reviews</a>
+                        <button class="btn btn-outline-dark" onclick="document.getElementById('agatha').play()">Add to Cart</button>
+                        <audio id="agatha"><source src="/agatha.mp3"></audio>
                     </div>
                 </div>
             </div>  
-            
         <% }) %>
     </div>  
 </div>   
-    
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>

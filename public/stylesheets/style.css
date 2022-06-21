@@ -25,11 +25,11 @@
     background-color: #2a0a17
 }
 
-#pCardT {
+#pCardT, #review, #newRH{
     font-family: 'Kaushan Script', cursive;
 }
 
-#info, #links, #decade, #foot{
+#info, #links, #decade, #foot, #leaveReview, #title, #comments, #select, #addReview{
     font-family: 'Cinzel', serif;
 }
 
